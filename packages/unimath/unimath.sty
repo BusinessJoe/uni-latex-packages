@@ -1,0 +1,33 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{unimath}[2022/03/16 Math shortcuts package]
+
+\RequirePackage{amsmath}
+\RequirePackage{amsthm}
+\RequirePackage{amssymb}
+
+
+% Generic
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\comment}[1]{\quad\text{(#1)}}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\eval}[1]{\left. #1 \right|}
+
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\emptyset}{\varnothing}
+
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\sign}{sign}
+
+
+
+% Calculus
+\newcommand{\parder}[2]{\frac{\partial {#1}}{\partial {#2}}}
+\newcommand{\der}[2]{\frac{d {#1}}{d {#2}}}
+\newcommand{\dd}[1]{\frac{d}{d {#1}}}
+
